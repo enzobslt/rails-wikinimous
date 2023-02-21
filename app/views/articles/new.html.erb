@@ -1,0 +1,9 @@
+<%= form_with model: @articles do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.submit %>
+<% end %>
+
+<%= link_to 'Retour à la liste', articles_path %>
